@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+</head>
+<body>
+<form method='POST' action='Exemplo_form_Recebe.php' enctype='multipart/form-data'>
+
+    check: 
+	<input name='notificacao' type='checkbox' value='1'/><br>
+    Sexo: 
+	<input name='sexo' type='radio' value='m'/> Masculino <input name='sexo' type='radio' value='f'/> Feminio <br>
+    Mensagem: 
+	<br><textarea name='txarea' cols='10' rows='5'>Olá Mundo!</textarea><br>
+	Selecione seu terrorista preferÍdo:<br>
+    <select name='logins[]' size='3' multiple>
+      <option value='A'>Abdul</option>	
+      <option value='C'>Calil</option>	
+      <option value='M'>Mohamed</option>
+      <option value='H'>Haas</option>
+      <option value='S'>Sallum</option>
+    </select><br>
+    
+    <input type='hidden' name='x' value='123'/>
+    
+    Enviar este arquivo: 
+	<input name='userfile' type='file'><br><br>
+    
+   	<input type='submit' value='Enviar Arquivo'> 
+    
+</form>
+</body>
+</html>
