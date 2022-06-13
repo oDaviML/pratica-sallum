@@ -47,11 +47,10 @@
     echo '<td>Arquivo: </td>';
     $arquivo = $_FILES["arquivo"];
 	$maximo = 1048576;
-	if (isset($arquivo)) 
-    {
+	if (isset($arquivo)) {
         if ($arquivo["type"] == "image/png") 
         {
-            if ($arquivo["size"] > $maximo) 
+            if ($arquivo["size"] < $maximo) 
             {
                 echo '<td>'.$arquivo["name"].'</td>';
             }
@@ -80,4 +79,3 @@
     echo '</tbody>';
     echo '</table>';
 ?>
-
